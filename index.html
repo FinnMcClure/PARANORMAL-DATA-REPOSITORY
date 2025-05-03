@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: "Verdana", "Arial", sans-serif;
+      background-color: #000022;
+      color: #ccccdd;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+    }
+    .container {
+      width: 780px;
+      margin: 20px auto;
+      border: 1px solid #444466;
+      background-color: #111133;
+    }
+    .forum-header {
+      background-color: #000022;
+      padding: 8px;
+      border-bottom: 1px solid #333355;
+    }
+    .forum-title {
+      font-size: 18px;
+      color: #aaccff;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 2px 2px 3px #000000;
+      letter-spacing: 1px;
+    }
+    .navigation {
+      background-color: #111133;
+      padding: 5px 10px;
+      font-size: 11px;
+      border-bottom: 1px solid #333355;
+    }
+    .navigation a {
+      color: #8899cc;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    .navigation a:hover {
+      text-decoration: underline;
+      color: #aaccff;
+    }
+    .thread-header {
+      background-color: #222244;
+      padding: 8px 10px;
+      border-bottom: 1px solid #333355;
+    }
+    .thread-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #aaccff;
+    }
+    .thread-meta {
+      font-size: 10px;
+      color: #8899aa;
+      margin-top: 3px;
+    }
+    .post {
+      border-bottom: 1px solid #333355;
+      background-color: #111133;
+      margin-bottom: 10px;
+    }
+    .post-header {
+      background-color: #222244;
+      padding: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .user-info {
+      float: left;
+      width: 150px;
+      padding: 10px;
+      border-right: 1px solid #333355;
+      font-size: 11px;
+      text-align: center;
+      background-color: #16162c;
+    }
+    .user-info img {
+      border: 1px solid #444466;
+      margin-bottom: 5px;
+    }
+    .username {
+      font-weight: bold;
+      color: #aaccff;
+    }
+    .user-title {
+      font-style: italic;
+      color: #7788aa;
+      margin: 3px 0 8px 0;
+      font-size: 10px;
+    }
+    .post-content {
+      margin-left: 170px;
+      padding: 15px;
+      line-height: 1.4;
+    }
+    .message-body {
+      margin-bottom: 15px;
+    }
+    .signature {
+      border-top: 1px dotted #333355;
+      margin-top: 15px;
+      padding-top: 5px;
+      font-size: 10px;
+      color: #7788aa;
+    }
+    .comments-section {
+      margin-left: 170px;
+      padding: 0 15px 15px 15px;
+    }
+    .comment {
+      background-color: #161628;
+      border: 1px solid #333355;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+    .comment-header {
+      border-bottom: 1px dotted #333355;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      color: #8899cc;
+      font-weight: bold;
+    }
+    .comment-timestamp {
+      color: #666688;
+      font-weight: normal;
+      font-size: 10px;
+    }
+    .footer {
+      background-color: #000022;
+      padding: 5px;
+      font-size: 10px;
+      text-align: center;
+      border-top: 1px solid #333355;
+      color: #666688;
+    }
+    .button {
+      background-color: #222244;
+      color: #aaccff;
+      border: 1px outset #444466;
+      font-size: 10px;
+      padding: 2px 5px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    .buttons-row {
+      text-align: right;
+      padding: 5px 15px;
+      background-color: #161628;
+    }
+    .counter {
+      font-size: 9px;
+      color: #666688;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .thread-status {
+      font-size: 9px;
+      color: #8899aa;
+      text-align: right;
+      padding: 3px 10px;
+      background-color: #222244;
+    }
+    pre {
+      white-space: pre-wrap;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      background-color: #161628;
+      padding: 8px;
+      border: 1px solid #333355;
+    }
+    .data-section {
+      margin: 10px 0;
+    }
+    .data-header {
+      font-weight: bold;
+      color: #aaccff;
+      margin-bottom: 3px;
+    }
+    ul {
+      margin: 5px 0 5px 20px;
+      padding-left: 15px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    .highlight {
+      color: #ffcc66;
+      font-weight: bold;
+    }
+    .ref {
+      color: #88cc99;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="forum-header">
+    <div class="forum-title">THE PARANORMAL DATA REPOSITORY</div>
+  </div>
+  
+  <div class="navigation">
+    <a href="#">HOME</a> » <a href="#">FIELD INVESTIGATIONS</a> » <a href="#">ACTIVE CASES</a> » <span style="color: #aaccff;">ACTIVITY LOG – 1206 SPOONER AVE (INITIAL FINDINGS)</span>
+  </div>
+  
+  <div class="thread-header">
+    <div class="thread-title">Activity Log – 1206 Spooner Ave (Initial Findings)</div>
+    <div class="thread-meta">Category: Field Investigations • Posted: October 25th, 2003, 23:18 PST • Views: 842 • Replies: 2</div>
+  </div>
+  
+  <div class="thread-status">
+    Status: Active Investigation • Last updated: October 26th, 2003, 09:14 PST
+  </div>
+  
+  <div class="post">
+    <div class="post-header">
+      <div style="font-weight: bold; color: #aaccff;">E_Yarrow</div>
+      <div style="font-size: 10px; color: #8899aa;">Posted: 10-25-2003, 23:18 PST</div>
+    </div>
+    
+    <div class="user-info">
+      <img src="/api/placeholder/80/80" alt="User Avatar" width="80" height="80">
+      <div class="username">E_Yarrow</div>
+      <div class="user-title">Field Investigator</div>
+      <div>Posts: 312</div>
+      <div>Joined: Mar 2001</div>
+      <div style="margin-top: 10px;">
+        <img src="/api/placeholder/12/12" alt="offline" width="12" height="12"> Offline
+      </div>
+    </div>
+    
+    <div class="post-content">
+      <div class="message-body">
+        <div class="data-section">
+          <div class="data-header">Location:</div> 
+          1206 Spooner Ave, Meadowbrook, WA
+        </div>
+        
+        <div class="data-section">
+          <div class="data-header">Time of Entry:</div> 
+          21:43
+        </div>
+        
+        <div class="data-section">
+          <div class="data-header">Conditions:</div> 
+          Clear skies, no wind, 52°F
+        </div>
+        
+        <div class="data-section">
+          <div class="data-header">Observations:</div>
+          <ul>
+            <li>Initial EMF sweep showed irregular surges in <span class="highlight">2.3–4.0 mG</span> range near stairwell landing and bedroom #2.</li>
+            <li>FLIR thermal imaging revealed a persistent cold spot (approx. <span class="highlight">46°F</span>) that moved independently of airflow.</li>
+            <li>Audio anomalies recorded on IR camera mic: rhythmic static pulses approx. 8s apart, undetectable in-person.</li>
+            <li>Subjective impression: Disorientation, emotional pressure, consistent with prior Class II site symptoms.</li>
+          </ul>
+        </div>
+        
+        <div class="data-section">
+          <div class="data-header">Conclusion:</div> 
+          Site shows clear anomalous behavior matching patterns from documented case files (<span class="ref">ref: Bellview House, 2012; Red Creek Hospital, 2019</span>).
+        </div>
+        
+        <p>Returning for solo night investigation on the 27th. Will upload raw data after. Open to peer review.</p>
+        
+        <div class="signature">
+          – EY<br>
+          <img src="/api/placeholder/200/20" alt="signature banner" style="margin-top: 5px;">
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+  
+  <div class="comments-section">
+    <div class="comment">
+      <div class="comment-header">
+        Comment by <span class="username">ScrytheResearch</span> <span class="comment-timestamp">• 10-26-2003, 07:42 PST</span>
+      </div>
+      <p>Very thorough, EY. Appreciated the clean sensor breakdown — this is leagues above the usual "bad vibes" reports we get.</p>
+      <p>Noticing similarities in your thermal patterns with the Santee Street Residual Case (thread: #2240) — might suggest a resonance-based attractor rather than classic trauma imprint. Would be curious to know if you've tried running a white noise sweep with layered reverse EVPs.</p>
+      <p>Stay safe in there. These kinds of sites <span class="highlight">*push back*</span>.</p>
+    </div>
+    
+    <div class="comment">
+      <div class="comment-header">
+        Comment by <span class="username">V_Palmer</span> <span class="comment-timestamp">• 10-26-2003, 09:14 PST</span>
+      </div>
+      <p>Fascinating read, Yarrow. I've been following the Meadowbrook chatter since that old obituary thread resurfaced last month.</p>
+      <p>Coincidentally, I was <span class="highlight">*planning a drive down*</span> myself — was going to check the place out this weekend but didn't want to step on any toes.</p>
+      <p>If your schedule's firm for the 27th, maybe we coordinate? I've got a newer gen EMCCD rig I'd like to trial in low-light.</p>
+      <p>DM me if that works — otherwise, I'll stick to periphery scans and keep my distance.</p>
+      <p>– VP</p>
+    </div>
+  </div>
+  
+  <div class="buttons-row">
+    <button class="button">Reply</button>
+    <button class="button">Quote</button>
+    <button class="button">Email</button>
+    <button class="button">Report</button>
+  </div>
+  
+  <div class="footer">
+    The Paranormal Data Repository © 2000-2003 | Powered by phpBB v2.0.23<br>
+    This site contains sensitive investigation data. Unauthorized distribution prohibited.
+    <div class="counter">
+      Visitors: 892,457 | Members Online: 42 | Active Cases: 73
+      <img src="/api/placeholder/88/31" alt="counter">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
